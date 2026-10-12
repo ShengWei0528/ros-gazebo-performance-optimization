@@ -1,0 +1,33 @@
+<!--
+  Rendering-related edits made to a copy of the TurtleBot3 world in week 2
+  (ROS Noetic + Gazebo 11), transcribed from the screenshot in
+  figures/week2_optimized_world_file.png.
+
+  How it was used:
+    mkdir -p ~/turtlebot3_ws/worlds
+    cp /opt/ros/noetic/share/turtlebot3_gazebo/worlds/turtlebot3_world.world \
+       ~/turtlebot3_ws/worlds/my_optimized_world.world
+    # then add / change the elements below inside <world name="default">
+
+  Only the edited elements are shown. The remaining content of the world file
+  (ground plane, physics block, turtlebot3_world model) comes from the
+  ROBOTIS turtlebot3_simulations package (Apache-2.0) and is unchanged.
+  The original world file also contains its own <scene> block; the week-2
+  report notes that duplicated settings were removed, so make sure no later
+  <scene> element turns shadows back on.
+-->
+<world name="default">
+
+  <!-- 1. Scene: no shadows, no grid, no origin marker -->
+  <scene>
+    <shadows>false</shadows>
+    <grid>false</grid>
+    <origin_visual>false</origin_visual>
+  </scene>
+
+  <!-- 2. Main light source: stop it from casting shadows -->
+  <light name="sun" type="directional">
+    <cast_shadows>false</cast_shadows>
+  </light>
+
+</world>

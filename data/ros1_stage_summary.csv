@@ -1,0 +1,5 @@
+stage_order,stage,short_label,stage_week,rtf,cpu_percent,memory_gb,main_measures,source
+0,Before optimization (Gazebo with GUI),Before|(GUI),1,0.40,150,1.50,No optimization,"First summary report (2025-05), Table 1; same values in the week-2 report's cross-week table. The week-1 report itself measured RTF 1.00 / ~110 % / ~1.07 GB."
+1,Graphics / rendering optimization,Graphics|(headless),2,1.00,46,0.387,"Shadows and extra light sources disabled, headless mode (gui:=false)","First summary report (2025-05), Table 1; matches the week-2 report"
+2,ROS Nodelet architecture,Nodelet|(LiDAR),4,1.02,38,0.38,LiDAR subscriber rewritten as a Nodelet to avoid inter-process copies,"First summary report (2025-05), Table 1. RTF/CPU match the week-4 report; the week-5 report gives 1.30 GB memory at this stage."
+3,OS scheduling and resource tuning,Scheduling|(chrt+taskset),6,1.02,38,0.38,CPU affinity (taskset) and real-time priority (chrt),"First summary report (2025-05), Table 1 only (not the week-6 report, which used a different, loaded setup)"

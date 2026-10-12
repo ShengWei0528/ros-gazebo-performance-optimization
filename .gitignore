@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ROS / catkin build output
+build/
+devel/
+install/
+log/
+*.bag
+*.db3
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+*~
+*.bak
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*

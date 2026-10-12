@@ -1,0 +1,6 @@
+strategy_order,strategy,short_label,rtf,cpu_percent,gazebo_latency_ms,memory_mb
+0,Default CFS scheduling (baseline),Default|CFS,0.68,380,8.5,500
+1,Real-time priority only (chrt -f 99),chrt|only,0.85,370,5.0,500
+2,CPU affinity only (taskset),taskset|only,0.88,355,4.1,498
+3,Real-time priority + CPU affinity,chrt +|taskset,0.95,360,3.2,498
+4,Priority + affinity + OPENBLAS_NUM_THREADS=1,+ BLAS|1 thread,1.03,180,2.5,480

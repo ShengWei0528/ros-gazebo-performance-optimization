@@ -1,0 +1,4 @@
+configuration,short_label,rtf,cpu_percent,memory_gb,notes
+Default GUI (week 1 baseline),Default GUI,0.40,150,1.50,gzserver + gzclient; graphics settings untouched
+Optimized GUI,Optimized GUI,1.00,94,1.02,"Shadows and duplicate scene settings removed; gzserver ~48 % + gzclient ~46 %"
+Headless (gui:=false),Headless,1.00,46,0.387,gzserver only (gzclient not started)

@@ -1,0 +1,3 @@
+# Reading the tables needs only the Python standard library (Python 3.9+).
+# matplotlib is used to draw the PNG charts; without it the script writes SVG instead.
+matplotlib>=3.5
